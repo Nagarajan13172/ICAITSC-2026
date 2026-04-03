@@ -1,6 +1,6 @@
 services:
   frontend:
-    image: icaitse:latest
+    image: ghcr.io/nagarajan13172/icaitse:latest
     restart: unless-stopped
     networks:
       - default
