@@ -1,0 +1,17 @@
+services:
+  frontend:
+    image: icaitse:latest
+    restart: unless-stopped
+    networks:
+      - default
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.isaitsc.rule=Host(`isaitsc.dev.snagarajan.me`)"
+      - "traefik.http.routers.isaitsc.entrypoints=websecure"
+      - "traefik.http.routers.isaitsc.tls=true"
+      - "traefik.http.routers.isaitsc.tls.certresolver=myresolver"
+      - "traefik.http.services.isaitsc.loadbalancer.server.port=4173"
+networks:
+  default:
+    name: edge
+    external: true
