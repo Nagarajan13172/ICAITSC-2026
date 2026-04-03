@@ -56,7 +56,7 @@ const Hero = () => {
 
           {/* Main Title */}
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-4xl 2xl:text-4xl font-display font-bold text-white mb-0 leading-tight animate-fade-in px-2 drop-shadow-lg" style={{ animationDelay: "0.1s" }}>
-            International Conference on
+            International
             <span className="block text-yellow-200 mt-2 sm:mt-2 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl 2xl:text-4xl drop-shadow-lg">
               Artificial Intelligence
             </span>
